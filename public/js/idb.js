@@ -11,7 +11,6 @@ request.onupgradeneeded = function(event) {
     db.createObjectStore('new_entry', { autoIncrement: true });
 };
 
-// upon a successful 
 request.onsuccess = function(event) {
     // when db is successfully created with its object store (from onupgradedneeded event above) or simply established a connection, save reference to db in global variable
     db = event.target.result;
@@ -23,7 +22,6 @@ request.onsuccess = function(event) {
 };
   
 request.onerror = function(event) {
-    // log error here
     console.log(event.target.errorCode);
 };
 
@@ -40,10 +38,10 @@ function saveRecord(record) {
 }
 
 function uploadEntry() {
-    // open a transaction on your db
+    // open a transaction on the db
     const transaction = db.transaction(['new_entry'], 'readwrite');
   
-    // access your object store
+    // access object store
     const budgetObjectStore = transaction.objectStore('new_entry');
   
     // get all records from store and set to a variable
@@ -51,7 +49,7 @@ function uploadEntry() {
 
     // upon a successful .getAll() execution, this function below will run
     getAll.onsuccess = function () {
-        // if there was data in indexedDb's store, it gets sent to the api server
+        // if there was data in indexedDb's store, it gets sent to the api server (api/transaction)
         if (getAll.result.length > 0) {
             fetch('/api/transaction', {
                 method: 'POST',

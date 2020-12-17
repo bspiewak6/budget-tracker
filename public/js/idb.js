@@ -3,11 +3,11 @@ let db;
 // establish a connection to IndexedDB database called 'budget' and set it to version 1
 const request = indexedDB.open('budget', 1);
 
-// this event will emit if the database version changes (non-existant to version 1, v1 to v2, etc.)
+// this event will emit if the database version changes (non-existent to version 1, v1 to v2, etc.)
 request.onupgradeneeded = function(event) {
     // save a reference to the database 
     const db = event.target.result;
-    // create an object store (table) called `new_entry`, set it to have an auto incrementing primary key of sorts 
+    // create an object store (table) called `new_entry`, set it to have an auto incrementing primary key 
     db.createObjectStore('new_entry', { autoIncrement: true });
 };
 
@@ -49,9 +49,9 @@ function uploadEntry() {
     // get all records from store and set to a variable
     const getAll = budgetObjectStore.getAll();
 
-    // upon a successful .getAll() execution, run this function
+    // upon a successful .getAll() execution, this function below will run
     getAll.onsuccess = function () {
-        // if there was data in indexedDb's store, send it to the api server
+        // if there was data in indexedDb's store, it gets sent to the api server
         if (getAll.result.length > 0) {
             fetch('/api/transaction', {
                 method: 'POST',

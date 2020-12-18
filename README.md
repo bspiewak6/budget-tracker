@@ -2,38 +2,31 @@
 ![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
 ## Description
-AS AN avid traveler
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling 
+This budget tracker is a fully functional progressive web application. The client wanted to update an existing budget tracker to allow for offline access and functionality. Users will be able to add expenses and deposits to their budget with or without an internet connection. Having offline functionality is paramount to the success of an app that handles users' financial information.
 
 ## Table of Contents
 * [Technologies](#technologies)
 * [Screenshots](#screenshots)
-* [Requirements](#requirements)
+* [Enhancements](#enhancements)
 * [Links](#links)
 
 ## Technologies
 1. JavaScript
-2. Node.js
-3. Express.js
+2. Express.js
+3. IndexedDB API
+4. MongoDB
+5. Mongoose.js
+6. Service Worker
+7. Web App Manifest 
+8. Heroku
 
 ## Screenshots
 ![Screenshots]()
 
-
-## Requirements
-GIVEN a budget tracker without an internet connection
-WHEN the user inputs an expense or deposit
-THEN they will receive a notification that they have added an expense or deposit
-WHEN the user reestablishes an internet connection
-THEN the deposits or expenses added while they were offline are added to their transaction history and their totals are updated
-
-The ability to enter deposits offline.
-
-The ability to enter expenses offline.
-
-Offline entries should be added to the tracker when the application is brought back online.
-
+## Enhancements
+1. Added functionality allows for expenses or deposits to be entered when there is no internet connection
+2. When the user enters their transaction, they will receive a notification that they have added an expense or deposit and it will be added to the ledger
+3. As soon as the user reestablishes an internet connection, their deposits or expenses that were added while they were offline are added to their transaction history and their totals are updated
 
 ## Links
 * [Budget Tracker Deployed App]()

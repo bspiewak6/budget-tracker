@@ -51,7 +51,7 @@ function uploadEntry() {
     getAll.onsuccess = function () {
         // if there was data in indexedDb's store, it gets sent to the api server (api/transaction)
         if (getAll.result.length > 0) {
-            fetch('/api/transaction', {
+            fetch('/api/transaction', { // should this be /api/transaction/bulk??
                 method: 'POST',
                 body: JSON.stringify(getAll.result),
                 headers: {

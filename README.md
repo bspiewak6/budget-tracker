@@ -28,8 +28,10 @@ This budget tracker is a fully functional progressive web application. The clien
 ![Screenshots](./assets/img/Screenshot_cache.png)
 #### App offline functionality
 ![Screenshots](./assets/img/Screenshot_offlinebackonline.png)
-#### Final Deployed App Transaction List 
+#### Final Transaction List 
 ![Screenshots](./assets/img/Screenshot_finaltransactions.png)
+#### Progressive Web App Installation -- Icon saved on Desktop
+![Screenshots](./assets/img/Screenshot_PWA.png)
 
 ## Enhancements
 1. Added functionality that allows for expenses or deposits to be entered when there is no internet connection using IndexedDB API

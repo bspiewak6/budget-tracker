@@ -11,14 +11,25 @@ This budget tracker is a fully functional progressive web application. The clien
 * [Links](#links)
 
 ## Technologies
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Mongoose.js](https://img.shields.io/badge/Mongoose.js-DD0031?style=for-the-badge)
-![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) <br />
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge) <br />
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) <br />
+![Mongoose.js](https://img.shields.io/badge/Mongoose.js-DD0031?style=for-the-badge) <br /> 
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) <br />
 
 ## Screenshots
-![Screenshots]()
+#### Starting App with Service Worker
+![Screenshots](./assets/img/Screenshot_start.png)
+#### IndexedDB API
+![Screenshots](./assets/img/Screenshot_indexedb.png)
+#### App online functionality
+![Screenshots](./assets/img/Screenshot_online.png)
+#### Cache Storage
+![Screenshots](./assets/img/Screenshot_cache.png)
+#### App offline functionality
+![Screenshots](./assets/img/Screenshot_offlinebackonline.png)
+#### Final Deployed App Transaction List 
+![Screenshots](./assets/img/Screenshot_finaltransactions.png)
 
 ## Enhancements
 1. Added functionality that allows for expenses or deposits to be entered when there is no internet connection using IndexedDB API

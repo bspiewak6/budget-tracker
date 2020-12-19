@@ -11,7 +11,6 @@ request.onupgradeneeded = function(event) {
 };
 
 request.onsuccess = function(event) {
-    // when db is successfully created with its object store (from onupgradedneeded event above) or simply established a connection, save reference to db in global variable
     db = event.target.result;
   
     // check if app is online, if yes run uploadEntry() function to send all local db data to api
@@ -19,25 +18,25 @@ request.onsuccess = function(event) {
         uploadEntry();
     }
 };
-  
+
 request.onerror = function(event) {
     console.log(event.target.errorCode);
 };
 
 // This function will be executed if we attempt to submit a new budget entry and there's no internet connection
 function saveRecord(record) {
-    // open a new transaction with the database
+    // open a new transaction
     const transaction = db.transaction(['new_entry'], 'readwrite');
   
     // access the object store for `new_entry`
     const budgetObjectStore = transaction.objectStore('new_entry');
   
-    // add record to store with add method
+    // add record to store
     budgetObjectStore.add(record);
 }
 
 function uploadEntry() {
-    // open a transaction on the db
+    // open a transaction
     const transaction = db.transaction(['new_entry'], 'readwrite');
   
     // access object store

@@ -70,7 +70,7 @@ function uploadEntry() {
                     // clear all items in your store
                     budgetObjectStore.clear();
 
-                    alert('All saved transactions have been submitted!');
+                    alert('All offline transactions have posted!');
                 })
                 .catch(err => {
                     console.log(err);

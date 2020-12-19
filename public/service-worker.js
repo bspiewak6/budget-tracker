@@ -18,7 +18,7 @@ const FILES_TO_CACHE = [
   './icons/icon-512x512.png',
 ];
 
-// Cache resources
+// install service worker - cache resources
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
@@ -62,9 +62,6 @@ self.addEventListener('fetch', function (e) {
         console.log('file is not cached, fetching : ' + e.request.url)
         return fetch(e.request)
       }
-
-      // You can omit if/else for console.log & put one line below like this too.
-      // return request || fetch(e.request)
     })
   )
 });

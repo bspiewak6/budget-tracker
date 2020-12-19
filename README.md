@@ -22,15 +22,15 @@ This budget tracker is a fully functional progressive web application. The clien
 ![Screenshots](./assets/img/Screenshot_start.png)
 #### IndexedDB API
 ![Screenshots](./assets/img/Screenshot_indexedb.png)
-#### App online functionality
+#### App Online functionality
 ![Screenshots](./assets/img/Screenshot_online.png)
 #### Cache Storage
 ![Screenshots](./assets/img/Screenshot_cache.png)
-#### App offline functionality
+#### App Offline functionality
 ![Screenshots](./assets/img/Screenshot_offlinebackonline.png)
 #### Final Transaction List 
 ![Screenshots](./assets/img/Screenshot_finaltransactions.png)
-#### Progressive Web App Installation -- Icon saved on Desktop
+#### Progressive Web App Installation -- Icon Saved On Desktop
 ![Screenshots](./assets/img/Screenshot_PWA.png)
 
 ## Enhancements

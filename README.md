@@ -1,6 +1,9 @@
 # Budget Tracker Application
 ![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
+<a href="https://budgettrackerbds.herokuapp.com/">![Deployed Application](https://img.shields.io/badge/Deployed%20App-orange.svg)</a>
+
+
 ## Description
 This budget tracker is a fully functional progressive web application. The client wanted to update an existing budget tracker to allow for offline access and functionality. Users will be able to add expenses and deposits to their budget with or without an internet connection. Having offline functionality is paramount to the success of an app that handles users' financial information.
 
@@ -11,11 +14,12 @@ This budget tracker is a fully functional progressive web application. The clien
 * [Links](#links)
 
 ## Technologies
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) <br />
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge) <br />
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) <br />
-![Mongoose.js](https://img.shields.io/badge/Mongoose.js-DD0031?style=for-the-badge) <br /> 
-![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) <br />
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)  
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
+![MongoDB Atlas](https://img.shields.io/badge/MongoDB%20Atlas-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
+![Mongoose.js](https://img.shields.io/badge/Mongoose.js-880000?style=for-the-badge)  
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)  
 
 ## Screenshots
 #### Starting App with Service Worker
